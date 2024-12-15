@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Grid</title>
+    <style>
+        
+        .container {
+            display: grid;
+            grid-template-columns: 50% 50%;  
+            grid-template-rows: auto;        
+            gap: 0px;
+            padding: 20px;
+        }
+
+       
+        .image1 {
+            grid-column: 1 / 2;  
+            grid-row: 1 / 2;      
+            position: relative;
+        }
+        .image1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image1 .text {
+            position: absolute;
+            top: 10%;
+            left: 35%;
+            transform: translate(-50%, -10%);
+            color: white;
+            font-size: 24px;
+            text-align: left;
+        }
+
+       
+        .right-column {
+            grid-column: 2 / 3;  
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-gap: 0px;
+        }
+
+        .right-column img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .image2, .image3, .image4, .image5 {
+            position: relative;
+        }
+
+        .image2 .text, .image3 .text, .image4 .text, .image5 .text {
+            color: white;
+            font-size: 10px;
+            text-align: left;
+        }
+
+      
+        .rectangles {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3)
+
+        }
+
+        .rectangle {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .rectangle i {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       
+        <div class="image1">
+            <img src="ph2.jpg" alt="Image 1">
+            <div class="text"><p style="color: orange;">Offers & services  </p><h2 style="color: orange;">offers & services  </h2><h3>connected to people in your life</h3> <h3>best 4h+ and unlimited internet bundlss and features with or mobile lines</h3>
+            
+            </div>
+            
+        </div>
+
+       
+        <div class="right-column">
+            <div class="image2">
+                <img src="ph3.jpg" alt="Image 2">
+                
+            </div>
+            <div class="image3" style="background-color: rgb(14, 87, 246);"> 
+                <div class="text"><h2>Orang Extra  <p>enjoy the uitimate experience of lifestyle & leisure with your Orange internet sub</p></div>
+            </div>
+            <div class="image4" style="background-color: rgb(2, 103, 69);">
+                <div class="text"><h2>Smart live </h2> <p>Wide selection of smart devices to make your life easier from orange</p></div>
+            </div>
+            <div class="ph1.pjg">
+                <img src="ph1.pjg" alt="Image 5">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="rectangles">
+        <div class="rectangle" style="background-color: orange;">
+            <i class="fa fa-phone"></i> 
+            <p>Mobile Offers</p>
+        </div>
+        <div class="rectangle">
+            <i class="fa fa-globe"></i> 
+            <p>internet Offers</p>
+        </div>
+        <div class="rectangle">
+            <i class="fa fa-devices"></i> 
+            <p>devices</p>
+        </div>
+        <div class="rectangle">
+            <i class="fa fa-globe"></i> 
+            <p>Int & Roa</p>
+        </div>
+        <div class="rectangle">
+            <i class="fa fa-fixed"></i>
+            <p>Fixed lines</p>
+        </div>
+    </div>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</body>
+</html>
